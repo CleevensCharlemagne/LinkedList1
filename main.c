@@ -58,3 +58,14 @@ struct node* deleteFirst() {
 bool isEmpty() {
    return head == NULL;
 }
+
+int length() {
+   int length = 0;
+   struct node *current;
+
+   for(current = head; current != NULL; current = current->next) {
+      length++;
+   }
+
+   return length;
+}
