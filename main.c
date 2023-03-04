@@ -81,7 +81,17 @@ struct node* find(int key) {
       return NULL;
    }
 
+   //navigate through list
+   while(current->key != key) {
 
+      //if it is last node
+      if(current->next == NULL) {
+         return NULL;
+      } else {
+         //go to next link
+         current = current->next;
+      }
+   }
 
    //if data found, return the current Link
    return current;
