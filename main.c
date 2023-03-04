@@ -108,4 +108,17 @@ struct node* delete(int key) {
    if(head == NULL) {
       return NULL;
    }
+
+   //navigate through list
+   while(current->key != key) {
+
+      //if it is last node
+      if(current->next == NULL) {
+         return NULL;
+      } else {
+         //store reference to current link
+         previous = current;
+         //move to next link
+         current = current->next;
+      }
 }
