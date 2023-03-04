@@ -96,3 +96,11 @@ struct node* find(int key) {
    //if data found, return the current Link
    return current;
 }
+
+//delete a link with given key
+struct node* delete(int key) {
+
+   //start from the first link
+   struct node* current = head;
+   struct node* previous = NULL;
+}
