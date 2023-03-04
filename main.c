@@ -69,3 +69,20 @@ int length() {
 
    return length;
 }
+
+//find a link with given key
+struct node* find(int key) {
+
+   //start from the first link
+   struct node* current = head;
+
+   //if list is empty
+   if(head == NULL) {
+      return NULL;
+   }
+
+
+
+   //if data found, return the current Link
+   return current;
+}
