@@ -53,3 +53,8 @@ struct node* deleteFirst() {
    //return the deleted link
    return tempLink;
 }
+
+//is list empty
+bool isEmpty() {
+   return head == NULL;
+}
