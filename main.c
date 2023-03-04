@@ -3,8 +3,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-int main()
-{
-    printf("Hello world!\n");
-    return 0;
-}
+struct node {
+   int data;
+   int key;
+   struct node *next;
+};
+
