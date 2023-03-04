@@ -103,4 +103,9 @@ struct node* delete(int key) {
    //start from the first link
    struct node* current = head;
    struct node* previous = NULL;
+
+    //if list is empty
+   if(head == NULL) {
+      return NULL;
+   }
 }
