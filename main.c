@@ -121,4 +121,16 @@ struct node* delete(int key) {
          //move to next link
          current = current->next;
       }
+   }
+
+    //found a match, update the link
+   if(current == head) {
+      //change first to point to next link
+      head = head->next;
+   } else {
+      //bypass the current link
+      previous->next = current->next;
+   }
+
+   return current;
 }
